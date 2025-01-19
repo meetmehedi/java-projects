@@ -1,4 +1,4 @@
-# java-
+# java-OOP-Single Inheritance
 Objective
 
 To create a program that manages employees and their departments, with a subclass Manager that calculates total salary based on base salary and bonus.
