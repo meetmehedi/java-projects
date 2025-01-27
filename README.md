@@ -2,31 +2,35 @@ Project Overview
 
 This project demonstrates various object-oriented programming (OOP) concepts, including single inheritance, multilevel inheritance, hierarchical inheritance, and encapsulation. Each problem showcases a real-world scenario and how these OOP principles can be applied effectively to solve them.
 
-Problem: Combining Encapsulation and Inheritance
+Problem: Hierarchical Inheritance
 
 Scenario:
-A library wants to track books and their issuers.
+A vehicle showroom wants to classify its inventory into different types.
 
 Classes and Functionality:
-	1. Book (Base Class):
-		• Private Attributes:
-			• bookId (String)
-			• title (String)
-			• author (String)
-		• Methods:
-			• Getters and setters for all attributes.
-	2. IssuedBook (Subclass of Book):
+	1. Vehicle (Base Class):
 		• Attributes:
-			• issuerName (String)
-			• issueDate (String)
+			• brand (String)
+			• model (String)
+			• price (double)
 		• Methods:
-		• displayBookDetails(): Displays both book and issuer details.
+		• displayDetails(): Prints the vehicle’s details.
+	2. Car (Subclass of Vehicle):
+		• Attributes:
+			• numberOfDoors (int)
+		• Methods:
+			• Overrides displayDetails() to include car-specific attributes.
+	3. Bike (Subclass of Vehicle):
+		• Attributes:
+			• engineCapacity (String)
+		• Methods:
+			• Overrides displayDetails() to include bike-specific attributes.
 
 Main Method Tasks:
-	• Create an object of IssuedBook.
-	• Set attributes using setters.
-	• Call displayBookDetails() to display all details.
-
+	• Create objects of Car and Bike.
+	• Set their attributes using setters.
+	• Call displayDetails() to display their details.
+ 
 Main Method Tasks:
 	• Create an object of Order.
 	• Set attributes for User, Customer, and Order using setters.
